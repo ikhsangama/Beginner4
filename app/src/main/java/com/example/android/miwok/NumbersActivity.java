@@ -88,4 +88,9 @@ public class NumbersActivity extends AppCompatActivity {
         tv.setText(p);
     }
 
+    public void Back_btn(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        finish();
+        startActivity(i);
+    }
 }

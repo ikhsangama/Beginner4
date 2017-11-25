@@ -102,6 +102,14 @@
             android:textAllCaps="false"
             android:onClick="Pesan_btn"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:onClick="Back_btn"/>
+
     </LinearLayout>
 
 </ScrollView>
