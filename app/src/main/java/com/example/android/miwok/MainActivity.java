@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Numbers_onClick(View view) {
         Intent i = new Intent(this, NumbersActivity.class);
-        finish();
+//        finish();
         startActivity(i);
     }
 }

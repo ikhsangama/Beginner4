@@ -89,8 +89,6 @@ public class NumbersActivity extends AppCompatActivity {
     }
 
     public void Back_btn(View view) {
-        Intent i = new Intent(this, MainActivity.class);
-        finish();
-        startActivity(i);
+        onBackPressed();
     }
 }
