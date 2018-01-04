@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,11 +29,22 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+//        NumbersClickListener cl = new NumbersClickListener();
+        TextView numbers = findViewById(R.id.numbers_id);
+//        numbers.setOnClickListener(new NumbersClickListener());
+        numbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (view.getContext(), NumbersActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
-    public void Numbers_onClick(View view) {
-        Intent i = new Intent(this, NumbersActivity.class);
-//        finish();
-        startActivity(i);
-    }
+//    public void Numbers_onClick(View view) {
+//        Intent i = new Intent(this, NumbersActivity.class);
+////        finish();
+//        startActivity(i);
+//    }
 }
